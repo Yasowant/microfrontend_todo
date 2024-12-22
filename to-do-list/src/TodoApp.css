@@ -1,0 +1,146 @@
+/* General App Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Default text color */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* Soft background for contrast */
+}
+
+.app {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #007bff; /* Highlighted header color */
+  letter-spacing: 1px;
+}
+
+/* Form Styling */
+.form {
+  display: flex; /* Use flexbox for horizontal alignment */
+  gap: 15px; /* Uniform gap between elements */
+  margin-bottom: 25px;
+}
+
+.form-input {
+  flex: 1; /* Allow the input to take up remaining space */
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+}
+
+.form-submit {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-submit:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.form-submit:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Task List Container */
+.todolist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Task Card Styling */
+.todo {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Task Label */
+.todo-label {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #495057;
+  word-wrap: break-word;
+  font-weight: 500;
+}
+
+/* Buttons Container */
+.todo-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+/* Shared Button Styling */
+.button {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Edit Button */
+.todo-edit {
+  background-color: #007bff;
+}
+
+.todo-edit:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Delete Button */
+.todo-delete {
+  background-color: #dc3545;
+}
+
+.todo-delete:hover {
+  background-color: #bd2130;
+  transform: scale(1.05);
+}
